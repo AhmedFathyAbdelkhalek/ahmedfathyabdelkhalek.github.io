@@ -1,212 +1,143 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Luna 3D Delta Printer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Luna, The Delta 3D Printer</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+</head>
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="/index.html" class="logo"><strong>Home</strong></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+<body class="is-preload">
 
-				<!-- Menu -->
-				<nav id="menu">
-					<ul class="links">
-						<li><a href="/index.html">Home</a></li>
-						<li><a href="/experience/experience.html">Experience</a></li>
-						<li><a href="/projects/projects.html">Projects</a></li>
-						<li><a href="/certifications/certifications.html">Certifications</a></li>
-						<li><a href="/curriculum_vitae/curriculum_vitae.html">Curriculum Vitae</a></li>
-						<li><a href="/about/about.html">About</a></li>
-						<li><a href="/contact/contact.html">Contact</a></li>
-					</ul>
-				</nav>	
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="/projects/media/luna/gifs/Helix.gif" alt="" />
-							</span>
-							<header class="major">
-								<h1>Luna</h1>
-							</header>
-							<div class="content">
-								<h3>Luna is my fast, accurate 3D printer that is based on a 
-									3-degree-of-freedom delta parallel robot that I designed and built as a continuation of my bachelor's project. 
-									Luna is by far my largest solo project ever and the one I am most proud of. </h3>
-							</div>
-						</div>
-					</section>
+		<!-- Header -->
+		<header id="header">
+			<a href="../index.html" class="logo">Home</a>
+		</header>
 
-				<!-- Main -->
-					<div id="main">
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="../experience/experience.html">Professional Experience</a></li>
+				<li class="active"><a href="../projects/projects.html">Projects</a></li>
+				<li><a href="../certifications/certifications.html">Certifications</a></li>
+				<li><a href="../curriculum_vitae/curriculum_vitae.html">Curriculum Vitae</a></li>
+				<li><a href="../about/about.html">About</a></li>
+				<li><a href="../contact/contact.html">Contact</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="mailto:ahmedfathyabdelkhalek@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://github.com/AhmedFathyAbdelkhalek" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://www.linkedin.com/in/ahmed-fathy-abdelkhalek/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://www.researchgate.net/profile/Ahmed-Fathy-91" target="_blank" class="icon brands alt fa-researchgate"><span class="label">ResearchGate</span></a></li>
+			</ul>
+		</nav>
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Origin</h2>
-									</header>
-									<p>The idea for Luna originated after my bachelor's thesis, titled "Trajectory Tracking Control of a 3 Degree of Freedom Magnetic Robotic System." 
-										The goal was to model the kinematics and dynamics of a novel Delta parallel robot and apply different control laws to compare their performance. 
-										This introduced me to parallel robotics, and I was completely fascinated by them. The study was then published at the IEEE
-										4th Novel Intelligent and Leading Emerging Sciences Conference (NILES) and received the <b>3<sup>rd</sup> Best Paper Award.</b>
-										The published paper was written with my thesis teammate, Mohammad, and under the supervision of Prof. Dr. Ayman El-Badawy. 
-										You can read the paper <a href="https://ieeexplore.ieee.org/document/9942389/" target="_blank">here.</a> </p>
-									<div style="text-align: center;">
-										<img src="/projects/media/luna/3rd_bpa_ashraf_dr_ayman.jpg" alt="" style="width:50%;"/> 
-										<figcaption>From left to right: Myself, my teammate Mohammad, and Prof. Dr. Ayman El-Badawy</figcaption>
-									</div>
-									<br>
-									<p>This inspired me to begin working on Luna in July 2022, right after my bachelor's thesis. 
-										Below is a more detailed look at how Luna came to life and gives an insight into how it all came together.</p>
-								</div>
-							</section>
+		<!-- Main -->
+		<div id="main">
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a class="image center">
-										<img src="/projects/media/luna/Delta Design.png" alt="" data-position="center center" style="width:90%"/>
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Design</h3>
-											</header>
-											<p>Luna is a Delta printer. The name Delta originates from its upside-down triangular shape. The first step was to design the triangular frame. 
-												The most important aspect of the Delta's frame is that the three towers should be 120 degrees apart to ensure squareness when the printer moves. 
-												After that, I spent weeks of research regarding the motion system and concluded that a belt-driven linear rod system would be ideal. 
-												Belt-driven linear rod systems provide superb accuracy when properly tensioned and lubricated while allowing the printer to reach very high speeds compared to 
-												the common cartesian printers. With the frame and motion system done, I scaled down the dimensions of the arms and end effector 
-												from my thesis study to fit my frame, and with that, the basic design was complete. The rest of the design process required measuring component dimensions
-												and integrating those within the design to have a final design for the printer.
-											</p>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a class="image center">
-										<img src="/projects/media/luna/assembly1.jpg" alt="" data-position="center center" style="width:90%"/>
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Components</h3>
-											</header>
-											<p>The components of the printer are pretty basic and, luckily, were easily found in the Egyptian market when I was building Luna. The frame was cut from a
-												sheet of stainless steel that was then bent and welded. The linear rods are hard chrome. 
-												Three stepper motors and their drivers control the motion system. A fourth stepper motor, a hotend, and a heatbed are purchased for feeding and melting the filament, 
-												and an Arduino Mega with a RAMPS 1.4 board controls the whole operation. All of this is powered by a 12V, 30A power supply unit (PSU).
-											</p>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a class="image" >
-										<img src="/projects/media/luna/software.png" alt="" data-position="center center" style="width:70%"/>
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Software</h3>
-											</header>
-											<p>Luna uses a modified version of <a href="https://marlinfw.org/meta/download/" target="_blank">Marlin</a> for its firmware.
-												The firmware sets up all the functionality we need in order to run the Delta robot as a 3D printer. Additionally, Luna
-												uses <a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank">PrusaSlicer</a> to slice models, which turns the 3D models that you want to print into machine code that the Arduino
-												can process and control each component accordingly. 
-											</p>
-										</div>
-									</div>
-								</section>
-								<section>
+			<!-- Post -->
+			<section class="post">
+				<p>
+				<header class="major">
+					<h1>Luna <br> The Delta 3D Printer</h1>
+				</header>
+				The idea for Luna originated after my bachelor's thesis, titled "Trajectory Tracking Control of a 3 Degree of Freedom Magnetic Robotic System."
+				The goal was to model the kinematics and dynamics of a novel Delta parallel robot and apply different control laws to compare their performance.
+				This introduced me to parallel robotics, and I was completely fascinated by them. The study was then published at the IEEE
+				4th Novel Intelligent and Leading Emerging Sciences Conference (NILES) and received the <b>3<sup>rd</sup> Best Paper Award.</b> The published paper was written with my thesis teammate, Mohammad, and under the supervision of Prof. Dr. Ayman El-Badawy.
+				You can read the paper <a href="https://ieeexplore.ieee.org/document/9942389/" target="_blank">here.</a>
 
-									<iframe width="560" height="700" src="https://youtube.com/embed/iWdaxITr1Zc?feature=share" title="YouTube video player" 
-									frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-									web-share" allowfullscreen></iframe>
+				<div class="image fit"><img src="/projects/media/luna/3rd_bpa_ashraf_dr_ayman.jpg" /></div>
+				<!-- <figcaption>From left to right: Myself, my teammate Mohammad, and Prof. Dr. Ayman El-Badawy
+					</figcaption> -->
 
-									<script>
-										document.getElementById('vid').play();
-									</script>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Demo</h3>
-											</header>
-											<p>This is a timelapse of a super-high-detail print, where Luna is printing at 125 mm/s (2.5 times faster 
-												than commercial cartesian printers). Character model by <a href="https://www.printables.com/@BenDansie_84596" target="_blank">Ben Dansie.</a></p>
-												<div class="box alt">
-													<div class="row gtr-50 gtr-uniform">
-														<div class="col-4"><span class="image fit"><img src="/projects/media/luna/orc_chief.jpg" alt="" /></span></div>
-														<div class="col-4"><span class="image fit"><img src="/projects/media/luna/orc_chief_side.jpg" alt="" /></span></div>
-														<div class="col-4"><span class="image fit"><img src="/projects/media/luna/orc_chief_back.jpg" alt="" /></span></div>
-													</div>
-												</div>
-										</div>
-									</div>
-								</section>
-							</section>
+				This inspired me to begin working on Luna in July 2022, right after my bachelor's thesis. Below is a more detailed look at how Luna came to life and gives an insight into how it came together.</p>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Print Gallery</h2>
-									</header>
-									<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/salty_mccreedy.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/vase.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/lucky_cat.jpg" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/eevee_side.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/herringbone.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/fractal.jpg" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Drogo.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Drogo_Slither.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Coin_castle.jpg" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Mini_delta.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Spiderman.jpg" alt="" /></span></div>
+				<hr style="clear: both;" />
+				<p>
+				<header class="major">
+					<h2>Design</h2>
+				</header>
+				<span class="image left"><img src="/projects/media/luna/Delta Design.png" alt="" /></span>Luna is a Delta printer. The name Delta originates from its upside-down triangular shape. The first step was to design the triangular frame. The most important aspect of the Delta's frame is
+				that the three towers should be 120 degrees apart to ensure squareness when the printer moves. After that, I spent weeks of research regarding the motion system and concluded that a belt-driven linear rod system would be ideal. Belt-driven linear rod systems provide superb accuracy
+				when properly tensioned and lubricated while allowing the printer to reach very high speeds compared to the common cartesian printers. With the frame and motion system done, I scaled down the dimensions of the arms and end effector from my thesis study to fit my frame, and with that,
+				the basic design was complete. The rest of the design process required measuring component dimensions and integrating those within the design to have a final design for the printer.</p>
 
-										</div>
-									</div>
-								</div>
-							</section>
+				<hr style="clear: both;" />
+				<p>
+				<header class="major">
+					<h2>Components</h2>
+				</header>
+				<span class="image right"><img src="/projects/media/luna/assembly1.jpg" alt="" /></span>The components of the printer are pretty basic and, luckily, were easily found in the Egyptian market when I was building Luna. The frame was cut from a sheet of stainless steel that was then bent
+				and welded. The linear rods are hard chrome. Three stepper motors and their drivers control the motion system. A fourth stepper motor, a hotend, and a heatbed are purchased for feeding and melting the filament, and an Arduino Mega with a RAMPS 1.4 board controls the whole operation.
+				All of this is powered by a 12V, 30A power supply unit (PSU).</p>
+
+				<hr style="clear: both;" />
+				<p style="display: flow-root;">
+				<header class="major">
+					<h2>Software</h2>
+				</header>
+				<span class="image left"><img src="/projects/media/luna/software.png" alt="" /></span>Luna uses a heavily modified version of <a href="https://marlinfw.org/meta/download/" target="_blank">Marlin</a> for its firmware. The firmware sets up all the functionality we need in order to run
+				the Delta robot as a 3D printer and allows it to understand G-code produced by the slicer. Additionally, Luna uses <a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank">PrusaSlicer</a> to slice models, which turns the 3D models that you want to print into G-code
+				that the Arduino can process and control each component accordingly.</p>
+
+				<hr style="clear: both;" />
+				<p>
+				<header class="major">
+					<h2>Demo</h2>
+				</header>
+
+				<span class="image right"><iframe style="width:100%; aspect-ratio: 3 / 4;" src="https://youtube.com/embed/iWdaxITr1Zc?feature=share" title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
+				This is a timelapse of a super-high-detail print, where Luna is printing at 150 mm/s (~2.5 times faster than commercial cartesian printers). Character model by <a href="https://www.printables.com/@BenDansie_84596" target="_blank">Ben Dansie.</a>
+
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/orc_chief.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/orc_chief_side.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/orc_chief_back.jpg" alt="" /></span></div>
 					</div>
-
-			<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="mailto:ahmedfathyabdelkhalek@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="https://github.com/AhmedFathyAbdelkhalek" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="https://www.linkedin.com/in/ahmed-fathy-abdelkhalek/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.researchgate.net/profile/Ahmed-Fathy-91" target="_blank" class="icon brands alt fa-researchgate"><span class="label">ResearchGate</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; CCA 3.0</li>
-					</ul>
 				</div>
-			</footer>
+				<script>
+					document.getElementById('vid').play();
+				</script>
+				</p>
+			</section>
+
+			<section id="post">
+				<header class="major">
+					<h2>Print Gallery</h2>
+				</header>
+				<div class="box alt">
+					<div class="row gtr-50 gtr-uniform">
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/salty_mccreedy.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/vase.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/lucky_cat.jpg" alt="" /></span></div>
+						<!-- Break -->
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/eevee_side.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/herringbone.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/fractal.jpg" alt="" /></span></div>
+						<!-- Break -->
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Drogo.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Drogo_Slither.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Coin_castle.jpg" alt="" /></span></div>
+						<!-- Break -->
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Mini_delta.jpg" alt="" /></span></div>
+						<div class="col-4"><span class="image fit"><img src="/projects/media/luna/Spiderman.jpg" alt="" /></span></div>
+
+					</div>
+				</div>
+			</section>
 		</div>
 
-	<!-- Scripts -->
+		<!-- Scripts -->
 		<script src="/assets/js/jquery.min.js"></script>
 		<script src="/assets/js/jquery.scrolly.min.js"></script>
 		<script src="/assets/js/jquery.scrollex.min.js"></script>
@@ -215,5 +146,6 @@
 		<script src="/assets/js/util.js"></script>
 		<script src="/assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
